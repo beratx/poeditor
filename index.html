@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>PO Editor</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" media="screen" type="text/css" href="style.css" />        
+    </head>
+    <script src="jsPDF-1.2.60/dist/jspdf.debug.js"></script>
+    <script src="jsPDF-1.2.60/dist/jspdf.min.js"></script>
+    <script src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+
+    <script type="text/javascript" src="./lib/primitives.js"></script>
+    <script type="text/javascript" src="./lib/basics.js"></script>
+    <script type="text/javascript" src="./lib/handles.js"></script>
+    <script type="text/javascript" src="./lib/stack.js"></script>
+    <script type="text/javascript" src="./lib/text.js"></script>
+    <script type="text/javascript" src="./lib/connections.js"></script>
+    <script type="text/javascript" src="./lib/connectionManagers.js"></script>
+    <script type="text/javascript" src="./lib/util.js"></script>
+    <script type="text/javascript" src="./lib/matrix.js"></script>
+    <script type="text/javascript" src="./lib/group.js"></script>
+    <script type="text/javascript" src="./lib/main.js"></script>
+
+    
+    <body>
+            <div id="header">
+                 <img src="icons/logo_black_bold.png" border="0">
+                 <img class="separator" src="toolbar_separator.gif" border="0" width="1" height="16"/>          
+            </div>
+
+            <div id="menu"></div>
+                
+            <div id="editor">
+                <div id="toolbar">
+                        <script>
+                            /**Builds the component toolbar panel*/
+                            function buildPanel(){
+                                    //add figures to the div
+                                    for(var i=0, len=Components.length; i<len; i++){
+                                        component = Components[i];
+                                        
+                                        var compName = component.Name;
+                                        var thumbURL = 'icons/' + component.image;
+                                        
+                                        var eComponent = document.createElement('img');
+                                        eComponent.setAttribute('src', thumbURL);
+                                        
+                                        eComponent.addEventListener('click', function (component){                                    
+                                            return function(e) {
+                                                e.preventDefault();
+                                                if (currentTextEditor != null) {
+                                                    currentTextEditor.blurTextArea();
+                                                    currentTextEditor.destroy();
+                                                    currentTextEditor = null;                                            
+                                                }
+                                                componentToCreate = component;
+                                                getCanvas().style.cursor = 'crosshair';
+                                                /*if (componentToCreate == "Box") {
+                                                    selectedComponentId = -1;
+                                                    state = STATE_CREATE_BOX;
+                                                    
+                                                }*/
+                                                if (componentToCreate == "Connettore") {
+                                                    selectedComponentId = -1;
+                                                    state = STATE_CONNECTOR_PICK_FIRST
+                                                    draw();
+                                                }
+                                                else{
+                                                    selectedComponentId = -1;
+                                                    selectedConnectorId = -1;
+                                                    state = STATE_CREATE_COMPONENT;
+                                                    draw();
+                                                }
+                                                
+                                            };
+                                        } (compName)
+                                        , false);
+                                        
+                      
+                                        eComponent.style.cursor = 'pointer';
+                                        eComponent.style.marginRight = '5px';
+                                        eComponent.style.marginTop = '2px';
+                                        
+                                        document.getElementById('toolbar').appendChild(eComponent);
+                                    }
+                            }
+                            
+                            buildPanel();
+                        </script>
+                </div>
+               
+                <!--THE canvas-->
+                <div id="canvas" style="width: 100%">
+                    <div  id="container">
+                        <div id="scroller">
+                        <canvas id="a" width="1055" height="560">
+                            Your browser does not support HTML5. Please upgrade your browser to any modern version.
+                        </canvas>
+                        </div>
+                        <script>
+                            window.onload = init;
+                        </script>
+
+                        <div id="text-editor"></div>
+                    </div>
+                    <!--Right Panel-->
+                    <div id="right_panel">
+                        <ul class="menur" style="margin-top: 19px;">
+                            <li>
+                                <a id="icon" href="#" height="64px" width="64px" onclick="printPDF();">
+                                    <img src="icons/printer_w_128.png" alt="print" height="64px" width="64px"/>
+                                </a>        
+                            </li>
+                            <li>
+                                <a id="icon" href="#" height="64px" width="64px" onclick="resetAll();">
+                                    <img src="icons/trash_w_128.png" alt="print" height="64px" width="64px"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                        
+                </div>
+                
+            </div>
+    </body>
+</html>
+
+

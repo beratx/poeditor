@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64px"
+   height="64px"
+   id="svg3426"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="registro.svg"
+   inkscape:export-filename="/home/mattia/beratfiles/programmazione di interfaccia/poeditorNew/icons/registro2.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs3428" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.5"
+     inkscape:cx="32"
+     inkscape:cy="38.401634"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:document-units="px"
+     inkscape:grid-bbox="true"
+     inkscape:window-width="854"
+     inkscape:window-height="562"
+     inkscape:window-x="385"
+     inkscape:window-y="28"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata3431">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.87427211px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 6.0638722,21.272726 51.7392638,0"
+       id="path3434"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.8807323px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 5.7667317,44 57.863275,44"
+       id="path3434-9"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.58697832px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 6.5454543,20.494005 0,23.548991"
+       id="path3434-3"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.58697832px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 57.090909,20.952777 0,23.548991"
+       id="path3434-3-3"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:#4d4d4d"
+       d="m 5.8181818,32.690547 c 0,-10.839864 0.029342,-12.082716 0.2875977,-12.181818 0.1581788,-0.0607 11.8077275,-0.110361 25.8878855,-0.110361 l 25.600288,0 0.109631,0.40909 c 0.0603,0.225 0.110751,5.706819 0.112116,12.181819 l 0.0025,11.772727 -26,0 -26.0000002,0 0,-12.071457 z m 50.5454542,-0.110361 0,-10.545455 -24.545454,0 -24.5454547,0 0,10.545455 0,10.545454 24.5454547,0 24.545454,0 0,-10.545454 z"
+       id="path3541"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#4d4d4d;fill-opacity:1;stroke:none;font-family:Courier 10 Pitch;-inkscape-font-specification:Courier 10 Pitch"
+       x="24.181818"
+       y="39.454544"
+       id="text3564"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3566"
+         x="24.181818"
+         y="39.454544">R</tspan></text>
+  </g>
+</svg>
